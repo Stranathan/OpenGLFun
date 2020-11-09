@@ -27,6 +27,6 @@ void main()
                            (smoothstep(0.515 / modDivisor, 0.52 / modDivisor, uv.y));
 
     float mask = clamp(verticalLines + horizontalLines, 0., 1.);
-    vec3 col = (1. - mask) * 0.5 * vec3(1., 0.98, 0.73); // shaderToyCol;
+    vec3 col = (1. - mask) * 0.5 * vec3(.97, 0.98, 0.71); // shaderToyCol;
     fragColor = vec4(col,1.0);
 }
